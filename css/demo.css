@@ -1,0 +1,73 @@
+/*
+  https://evoluteur.github.io/
+  (c) 2023 Olivier Giulieri
+ */
+
+@font-face {
+  font-family: "Overpass-Regular";
+  src: url("Overpass/Overpass-Regular.ttf");
+}
+@font-face {
+  font-family: "Overpass-Bold";
+  src: url("Overpass/Overpass-Bold.ttf");
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass-Regular", serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  background-color: #0288d1;
+  overflow-x: hidden;
+}
+
+a,
+a:visited {
+  color: #ffb74d;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffcc80;
+  text-decoration: underline;
+}
+strong {
+  font-family: "Overpass-Bold";
+}
+footer {
+  color: silver;
+  font-size: 0.8em;
+  margin: 30px 20px 10px;
+}
+section {
+  position: relative;
+  border-left: solid 6px transparent;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    font-size: 15pt;
+  }
+}
+
+@media print {
+  body {
+    color: #1a1a1a !important;
+  }
+  @page {
+    margin: 1cm 1cm;
+  }
+}
+
+#braille2 {
+  background: white;
+  padding: 30px 0 0 0;
+}

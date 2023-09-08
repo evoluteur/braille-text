@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Braille-Text</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bbdefb" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="css/braille.css" rel="stylesheet" />
+    <link href="css/demo.css" rel="stylesheet" />
+    <script src="js/braille.js"></script>
+
+    <meta name="keywords" content="braille display animation javascript css" />
+    <meta
+      name="description"
+      content="Simple javascript and CSS to display Braille"
+    />
+  </head>
+
+  <body>
+    <section>
+      <h1>Braille-Text</h1>
+      <p>
+        Simple javascript and CSS to display Braille with translation hover
+        effect (for sighted people).<br /><br />
+      </p>
+      <p>White Braille</p>
+      <div id="braille"></div>
+
+      <p>Black Braille</p>
+      <div id="braille2" class="black-br"></div>
+    </section>
+    <script>
+      const brMsg = braille("I read Braille");
+      document.getElementById("braille").innerHTML = brMsg;
+      document.getElementById("braille2").innerHTML = brMsg;
+    </script>
+    <br />
+    <br />
+    <section>
+      <p>
+        Code available for download at
+        <a href="https://github.com/evoluteur/braille-text">GitHub</a>.
+      </p>
+      <p>
+        More Braille tools at
+        <a href="https://evoluteur.github.io/braille-tools/index.html"
+          >Braille-Tools</a
+        >.
+      </p>
+    </section>
+    <footer>
+      &#169; 2023 <a href="https://evoluteur.github.io/">Olivier Giulieri</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "braille-text",
+  "version": "0.0.1",
+  "description": "Home Page of Olivier Giulieri",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evoluteur/braille-text"
+  },
+  "copyright": "(c) 2023 Olivier Giulieri",
+  "author": "Olivier Giulieri (https://evoluteur.github.io/)",
+  "license": "MIT",
+  "keywords": [
+    "braille",
+    "css"
+  ]
+}
