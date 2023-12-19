@@ -1,7 +1,7 @@
 {
   "name": "braille-text",
   "version": "0.0.1",
-  "description": "Home Page of Olivier Giulieri",
+  "description": "Simple javascript and CSS to display Braille with translation hover effect (for sighted people).",
   "repository": {
     "type": "git",
     "url": "git://github.com/evoluteur/braille-text"

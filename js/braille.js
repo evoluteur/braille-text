@@ -5,7 +5,7 @@
 
 const e = (id) => document.getElementById(id);
 
-braille = (message) => {
+const braille = (message) => {
   var h = "";
   var myChar, prevCharNum, inQuote;
   const BrChar = (bPix, bAlt) =>
