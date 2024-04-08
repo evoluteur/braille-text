@@ -23,7 +23,14 @@
     <link href="css/demo.css" rel="stylesheet" />
     <link href="css/braille.css" rel="stylesheet" />
     <script src="js/braille.js"></script>
-
+    <script>
+      const brName = (v) => {
+        document.getElementById("braille-name").innerHTML = braille(v);
+      };
+      const setup = () => {
+        brName("John Doe");
+      };
+    </script>
     <meta
       name="keywords"
       content="braille, display, animation, javascript, css"
@@ -34,47 +41,65 @@
     />
   </head>
 
-  <body>
+  <body onload="setup()">
     <section>
       <h1>Braille-Text</h1>
       <p>
-        Simple javascript and CSS to display Braille with translation hover
-        effect (for sighted people).<br /><br />
+        Simple javascript and CSS to display Braille with translation on hover.
       </p>
-      <p>White Braille</p>
-      <div id="braille"></div>
-
-      <p>Black Braille</p>
-      <div id="braille2" class="black-br"></div>
     </section>
-    <script>
-      const brMsg = braille("I read Braille");
-      document.getElementById("braille").innerHTML = brMsg;
-      document.getElementById("braille2").innerHTML = brMsg;
-    </script>
-    <br />
-    <br />
-    <h2>Usage</h2>
-    <p>To insert Braille in your web pages, simply use the following code.</p>
-    <pre>
-    TODO:
-   </pre
-    >
 
     <section>
+      <h2>See your name in Braille</h2>
+      <p><input value="John Doe" onKeyUp="javascript:brName(this.value)" /></p>
+      <p id="braille-name"></p>
+    </section>
+
+    <section>
+      <h2>2 styles: White & Black</h2>
+      <p>White Braille</p>
+      <p id="braille"></p>
+
+      <p>Black Braille</p>
+      <p id="braille2" class="black-br"></p>
+      <script>
+        const brMsg = braille("I read Braille");
+        document.getElementById("braille").innerHTML = brMsg;
+        document.getElementById("braille2").innerHTML = brMsg;
+      </script>
+    </section>
+
+    <section>
+      <h2>Usage</h2>
+      <p>To insert Braille in your web pages, simply use the following code.</p>
+      <p>In the page head.</p>
+      <pre>
+  &lt;link href="css/braille.css" rel="stylesheet" />
+  &lt;script src="js/braille.js">&lt;/script>
+</pre
+      >
+      <p>In the page body.</p>
+      <pre>
+  &lt;div id="braille">&lt;/div>
+  &lt;script>
+      document.getElementById("braille").innerHTML = braille("I read Braille");
+  &lt;/script>
+</pre
+      >
       <p>
         Code available for download at
         <a href="https://github.com/evoluteur/braille-text">GitHub</a>.
       </p>
       <p>
-        More Braille tools at
+        More Javascript and CSS forBraille at
         <a href="https://evoluteur.github.io/braille-tools/index.html"
           >Braille-Tools</a
         >.
       </p>
+      <p>
+        <br />
+        &#169; 2024 <a href="https://evoluteur.github.io/">Olivier Giulieri</a>
+      </p>
     </section>
-    <footer>
-      &#169; 2023 <a href="https://evoluteur.github.io/">Olivier Giulieri</a>
-    </footer>
   </body>
 </html>

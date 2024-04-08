@@ -4,10 +4,13 @@ Simple Javascript and CSS to display Braille on web pages with hover effect for 
 
 [Live demo](https://evoluteur.github.io/braille-text/index.html)
 
+![](screenshots/your-name.png)
 
 ```js
 const message = braille("I read Braille");
 document.getElementById("braille").innerHTML = message;
 ```
 
-(c) 2023 Olivier Giulieri
+![](screenshots/themes.png)
+
+(c) 2024 Olivier Giulieri
