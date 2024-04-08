@@ -1,6 +1,6 @@
 /*
  	https://evoluteur.github.io/
- 	(c) 2023 Olivier Giulieri
+ 	(c) 2024 Olivier Giulieri
  */
 
 const e = (id) => document.getElementById(id);
