@@ -13,4 +13,8 @@ document.getElementById("braille").innerHTML = message;
 
 ![](screenshots/themes.png)
 
+The code is open source at [GitHub](https://github.com/evoluteur/braille-text).
+
+More Javascript and CSS to display Braille at [Braille-Tools](https://evoluteur.github.io/braille-tools/index.html).
+
 (c) 2024 Olivier Giulieri
