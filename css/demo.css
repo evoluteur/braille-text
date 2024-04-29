@@ -19,7 +19,7 @@ html {
 }
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   font-family: "Overpass-Regular", serif;
   font-size: 18px;
   font-weight: 300;
@@ -78,6 +78,7 @@ pre {
   background-color: #062637;
   color: white;
   padding: 20px 10px;
+  overflow-x: auto;
 }
 input {
   font-size: 20px;
